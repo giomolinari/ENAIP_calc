@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Carpenteria ENAIP</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="action_about">Informazioni</string>
+    <string name="action_help">Aiuto</string>
+
+    <string name="ok">OK</string>
+    <string name="annulla">ANNULLA</string>
+    <string name="str_guida">Guida</string>
+
+    <string name="errore_dati">Inserisci i dati richiesti</string>
+
+    <string name="info"> - Marco Pizzini e Istituto ENAIP Tione\n- dot.ssa Silvia Gabrielli (UniTn)</string>
+    <string name="valuta">Se ti piace la nostra app, puoi votarla sul Google Play Store e scrivere una recensione!</string>
+
+    <string name="versione">Versione: 1.9</string>
+    <string name="copyright">2018 Giovanni Molinari\nUniversità degli Studi di Trento</string>
+
+    <string name="teo_intro">Questa applicazione nasce con lo scopo di facilitare alcuni calcoli legati alla carpenteria in legno, sia per quanto riguarda la tracciatura e il taglio a mano che per quanto riguarda alcune valutazioni di carattere prettamente geometrico e di quantificazione materiali.\nAlla base di tutto sta la teoria della trigonometria cioè della risoluzione di triangoli rettangoli attraverso l’uso delle funzioni trigonometriche (<i>seno</i>, <i>coseno</i>, <i>tangente</i>). Tutti gli angoli devono essere espressi in forma sessagesimale (angolo retto <b>90°</b>, angolo piatto <b>180°</b>, angolo giro <b>360°</b>) e tutte le misure lineari devono essere espresse in metri.</string>
+
+    <string name="costante_intro">Attraverso questa sezione è possibile calcolare le principali caratteristiche geometriche degli elementi lignei che compongono una copertura a padiglione avente tutte le falde con pendenza uguale. In particolare a partire dal valore di pendenza \u03B1 espresso in gradi sessagesimali è possibile calcolare in modo automatico:</string>
+    <string name="costante_parte1"> - <b>la pendenza ɣ del diagonale</b> (displuvio o compluvio): sempre inferiore alla pendenza di falda e legata ad essa dalla formula: \n<i>γ = arctan(tanα/\u221A(2))</i>;</string>
+    <string name="costante_parte2"> - <b>l’angolo di smusso</b>: indica l’inclinazione dei due semipiani che, a partire dal centro della schiena del diagonale, individuano la smussatura (concava per il compluvio e convessa per il displuvio): \n<i>as = arctan(senγ)</i>;</string>
+    <string name="costante_parte3"> - <b>angolo arcareccio</b>: indica il valore da utilizzare per la tracciatura degli intagli tra il diagonale e gli arcarecci (banchine o colmi), da utilizzare insieme all’angolo macchina (costante e pari a 45°): \n<i>aa = arctan(cosγ)</i>.</string>
+
+    <string name="diverse_intro">Nel caso in cui un tetto a padiglione presenti due pendenze di falda contigue differenti (\u03B1 e \u03B2), l’elemento diagonale (compluvio o displuvio) presenta una geometria molto complessa. È tuttavia possibile calcolare:</string>
+    <string name="diverse_parte1"> - <b>gli angoli in pianta del diagonale</b> ovvero gli angoli formati tra le linee di gronda (ipotizzate ortogonali tra loro) e la proiezione sul piano orizzontale del diagonale stesso;</string>
+    <string name="diverse_parte2"> - <b>la pendenza ɣ del diagonale</b> (displuvio o compluvio);</string>
+    <string name="diverse_parte3"> - <b>gli angoli di smusso</b> che, in questo caso particolare, si differenziano tra lato sinistro e lato destro.</string>
+
+    <string name="pendenze_intro">Questo triangolo rettangolo viene utilizzato per la schematizzazione delle formule fondamentali di trigonometria applicabili in carpenteria. Si individuano tre lati e tre angoli:</string>
+    <string name="pendenze_parte1"> - 1 cateto orizzontale chiamato <b>b</b>, detto anche “base” o “bolla” che rappresenta la distanza in piano;</string>
+    <string name="pendenze_parte2"> - 1 cateto verticale chiamato <b>h</b>, detto “altezza” o “piombo” che rappresenta il dislivello di quota;</string>
+    <string name="pendenze_parte3"> - 1 ipotenusa chiamata <b>L</b>, detta “lato” o “correntino” che rappresenta l’elemento ligneo che porta pendenza;</string>
+    <string name="pendenze_parte4"> - 1 angolo a 90° opposto al correntino e compreso tra la base e l’altezza;</string>
+    <string name="pendenze_parte5"> - 1 angolo <b>\u03B1</b> opposto all’altezza e compreso tra la base e il correntino, che rappresenta la pendenza del correntino stesso;</string>
+    <string name="pendenze_parte6"> - 1 angolo <b>\u03B2</b> opposto alla base e compreso tra l’altezza e il correntino, complementare all’angolo di pendenza.</string>
+    <string name="pendenze_parte7">Noti almeno due di questi 6 elementi è possibile calcolare tutti gli altri attraverso le funzioni trigonometrice seno, coseno, tangente e le 3 funzioni inverse.</string>
+
+    <string name="convert_intro">Questa sezione permette di convertire pendenze espresse in sistemi diversi:</string>
+    <string name="convert_parte1"> - <b>grado sessagesimale</b> (GRADI o DEG): 1/360° dell’angolo giro;</string>
+    <string name="convert_parte2"> - <b>percentuale</b> (P%): pendenza espressa come rapporto tra il dislivello e la distanza orizzontale;</string>
+    <string name="convert_parte3"> - <b>radianti</b> (RAD): un angolo giro corrisponde a 2\u03C0;</string>
+    <string name="convert_parte4"> - <b>grado centesimale</b> (GRAD): 1/400° dell’angolo giro.</string>
+
+    <string name="tavolato_intro">Il calcolo della superficie del tavolato può tornare utile ogni qual volta ci sia da stimare o da quantificare l’effettiva superficie di una copertura, ad esempio quando si affronta la realizzazione di un pacchetto di isolamento (freno a vapore, isolante, telo), del manto di copertura (tegole, lamiera, scandole) o, semplicemente, l’assito o il perlinato sopra la struttura portante o di ventilazione. La superficie dipende da tre fattori:</string>
+    <string name="tavolato_parte1"> - <b>pianta dell’edificio sottostante</b>: <i>rettangolare</i> e <i>rettangolare con innesto (a “T”)</i>;</string>
+    <string name="tavolato_parte2"> - <b>pendenza delle falde</b> (ipotizzata costante): la copertura può essere monofalda, a due falde o a padiglione (con crescente percentuale di sfrido);</string>
+    <string name="tavolato_parte3"> - <b>sporto di gronda</b> (ipotizzato costante su tutte le falde).</string>
+    <string name="tavolato_parte4">I valori vanno inseriti in metri e il risultato è espresso in metri quadrati.</string>
+
+    <string name="inclinometro">Test</string>
+
+    <string name="pend_diag">Pendenza del diagonale (γ):</string>
+    <string name="ang_smuss">Angolo smusso (<i>as</i>):</string>
+    <string name="ang_arc">Angolo arcareccio (<i>aa</i>):</string>
+    <string name="smuss_a">Smusso - falda \u03B1:</string>
+    <string name="smuss_b">Smusso - falda \u03B2:</string>
+    <string name="ang_piantaA">Angolo in pianta - falda \u03B1:</string>
+    <string name="ang_piantaB">Angolo in pianta - falda \u03B2:</string>
+
+    <string name="a1">\u03B1 = <i>arcsen</i>(h/L)</string>
+    <string name="a2">\u03B1 = <i>arccos</i>(b/L)</string>
+    <string name="a3">\u03B1 = <i>arctan</i>(h/b)</string>
+    <string name="L1">L = b/<i>cos</i>\u03B1</string>
+    <string name="L2">L = b/<i>sen</i>\u03B1</string>
+    <string name="b1">b = L \u00D7 <i>cos</i>\u03B1</string>
+    <string name="b2">b = h/<i>tan</i>\u03B1</string>
+    <string name="h1">h = L \u00D7 <i>sen</i>\u03B1</string>
+    <string name="h2">h = b \u00D7 <i>tan</i>\u03B1</string>
+    <string name="P">P = 100 \u00D7 <i>tan</i>\u03B1</string>
+    <string name="a4">\u03B1 = <i>arctan</i>(P/100)</string>
+    <string name="beta">\u03B2 = 90 - \u03B1</string>
+
+    <string name="contatta">Comunica allo sviluppatore qualsiasi suggerimento o problema riscontrato:</string>
+    <string name="contatta_enaip">Contattaci via email per qualsiasi curiosità o informazione riguardo la Scuola di Carpenteria e la nostra offerta formativa.</string>
+    <string name="chi_siamo">Il Centro di Formazione Professionale Enaip di Tione di Trento ha dato il via, nel corso dell\'anno scolastico 2010-2011, al <b>primo corso in Italia</b> per la formazione di <b>carpentieri del legno</b>. Il percorso scolastico, inquadrato all\'interno del settore edile della formazione professionale, è articolato in quattro anni: due anni propedeutici rivolti a selezionare gli elementi più motivati e interessati, un terzo anno che porta alla qualifica professionale di <b>Operatore di Carpenteria del legno</b>, incentrato prevalentemente sul taglio a mano, e un quarto anno di diploma di <b>Tecnico edile di Carpenteria del legno</b> rivolto soprattutto agli edifici in legno e organizzato sull\’alternanza formativa scuola-azienda. I corsi si svolgono interamente presso la sede staccata di Condino (TN).\nFondamentale per la scuola è il rapporto col mondo produttivo: <i>\"con le aziende, per le aziende\"</i> è il principio ispiratore del corso. <i>\"Con le aziende\"</i> attraverso seminari didattici, consulenze e sponsorizzazioni che le principali ditte del mondo della carpenteria portano all\'interno della scuola e <i>\"per le aziende\"</i> attraverso il continuo feedback che le realtà artigiane e industriali con le quali la scuola collabora forniscono, soprattutto durante i periodi di tirocinio e di alternanza formativa svolti dagli allievi. La scuola ha partecipato in questi anni a numerosi eventi fieristici ed espositivi, raccogliendo sempre molta attenzione e riuscendo ad allargare l\'utenza pubblicizzando il corso anche fuori dai confini provinciali: trattandosi infatti dell\'unico corso a livello nazionale che si occupa di carpenteria in legno, si registrano iscrizioni di allievi anche da fuori regione.</string>
+
+    <string name="guida_calc_titolo">Come usare i calcolatori</string>
+    <string name="guida_incl_titolo">Come usare l\'inclinometro</string>
+    <string name="guida_calc"> - Inserire i dati numerici nelle caselle di testo. In caso siano presenti più di due caselle, usare il tasto freccia sulla tastiera virtuale per scorrere fra le varie caselle. Si può in ogni caso cliccare per selezionarle separatamente.\n - Una volta inserito un valore, premere il tasto spunta di conferma dalla tastiera virtuale.\n - Premere il pulsante CALCOLA DATI per ottenere i dati desiderati.\nNotare che il pulsante assume un colore grigio e viene temporaneamente disabilitato.\n - Al termine di ogni calcolo premere RESETTA per cancellare i dati e riportarli allo stato <i>-null-</i>, che è semplicemente un valore riempitivo.\n\nNOTE:\n - E\' possibile scorrere la pagina dall\'alto verso il basso.\n - Per inserire valori decimali si deve usare il punto e non la virgola. Non si possono inserire valori negativi.</string>
+    <string name="guida_pend_titolo">Uso del triangolo delle pendenze</string>
+    <string name="guida_pend">Per iniziare selezionare un\'operazione tramite il menu a tendina cliccando sulla freccia. Ad ogni operazione corrispondono diversi dati che vengono aggionati di conseguenza.</string>
+    <string name="guida_incl">L\'inclinometro permette di stabilire l\'inclinazione in gradi sessagesimali rispetto allo smartphone di un piano o di un oggetto. Mantenendo il dispositivo in posizione orizzontale si avrà un valore prossimo a 0°, per poi ruotarlo in senso <b>orario</b> fino a 90° alla posizione verticale.\nIl pulsante centrale una volta premuto riporta il valore attuale, per annotarlo o per una più facile lettura.</string>
+
+    <string name="dist1">Numero pezzi (pcs):</string>
+    <string name="dist2">Prezzo totale:</string>
+    <string name="dist3">Peso totale (quintali):</string>
+
+    <string name="ind_calc">Impossibile individuare l\'app Calcolatrice</string>
+    <string name="avv_calc">Impossibile avviare l\'app Calcolatrice</string>
+
+    <string name="scuola">La Scuola</string>
+
+    <string-array name="colori">
+        <item>Default</item>
+        <item>Nero</item>
+    </string-array>
+    <string name="title_activity_teoria_duefaldedoppia">teoria_duefaldedoppia</string>
+    <string name="title_activity_bolla">Livella a bolla</string>
+    <string name="ringraziamenti">Ringraziamenti</string>
+    <string name="contattaci">Contattaci</string>
+    <string name="valuta_l_apos_app">Valuta l\'app</string>
+    <string name="email">Email</string>
+</resources>

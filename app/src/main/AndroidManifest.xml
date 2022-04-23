@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cham.giovannimolinari.enaip_app">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:enabled="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DueFaldeSingola"
+            android:label="Pendenza costante"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".DueFaldeDoppia"
+            android:label="Pendenze diverse"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Superficie"
+            android:label="Superficie tavolato"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Superficie_rettangolo"
+            android:label="Pianta rettangolare"
+            android:parentActivityName=".Superficie"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Superficie_ti"
+            android:label="Pianta a T"
+            android:parentActivityName=".Superficie"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Triangolo2"
+            android:label="Triangolo delle pendenze"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Info"
+            android:label="Informazioni"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Impostazioni"
+            android:label="Impostazioni"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Convertitore"
+            android:label="Conversione angoli"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".teoria_duefaldesingola"
+            android:label="Teoria: pendenza costante"
+            android:parentActivityName=".DueFaldeSingola" />
+        <activity
+            android:name=".teoria_duefaldedoppia"
+            android:label="Teoria: pendenze diverse"
+            android:parentActivityName=".DueFaldeDoppia" />
+        <activity
+            android:name=".teoria_pendenze"
+            android:label="Teoria: triangolo pendenze"
+            android:parentActivityName=".Triangolo2" />
+        <activity
+            android:name=".teoria_convertitore"
+            android:label="Teoria: conversione"
+            android:parentActivityName=".Convertitore" />
+        <activity
+            android:name=".teoria_tavolato"
+            android:label="Teoria: tavolato"
+            android:parentActivityName=".Superficie" />
+        <activity
+            android:name=".teoria_intro"
+            android:label="Teoria: introduzione" />
+        <activity
+            android:name=".Guida"
+            android:label="Guida"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Distinta"
+            android:label="Distinta legname"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Accelerometro" />
+        <activity
+            android:name=".Inclinometro"
+            android:label="Inclinometro"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".teoria_inclinometro"
+            android:label="Teoria: inclinometro"
+            android:parentActivityName=".Inclinometro" />
+        <activity
+            android:name=".teoria_distinta"
+            android:label="Teoria: distinta legname"
+            android:parentActivityName=".Distinta"></activity>
+        <activity
+            android:name=".Bolla"
+            android:label="@string/title_activity_bolla"
+            android:parentActivityName=".MainActivity"
+         ></activity>
+    </application>
+
+</manifest>

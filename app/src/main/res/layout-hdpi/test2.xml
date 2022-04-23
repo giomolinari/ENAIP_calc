@@ -1,0 +1,377 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.cham.giovannimolinari.myapplication.DueFaldeDoppiaActivity"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:src="@drawable/doppia"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="4dp" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:textAllCaps="false"
+            android:text="CALCOLA DATI"
+            android:id="@+id/button"
+            android:textSize="12dp"
+            android:paddingEnd="24dp"
+            android:paddingStart="24dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/til"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView2"
+            android:width="60sp"
+            android:height="20sp"
+            android:textAlignment="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="-null-"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/textView111"
+            android:layout_alignTop="@+id/textView112"
+            android:paddingBottom="4dp"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView3"
+            android:width="60sp"
+            android:height="20sp"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="-null-"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView29"
+            android:layout_alignStart="@+id/textView20"
+            android:textColor="@color/black_87"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="RESETTA"
+            android:id="@+id/button5"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="12dp"
+            android:layout_alignTop="@+id/button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="24dp"
+            android:paddingStart="24dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/smuss_a"
+            android:id="@+id/textView15"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:layout_below="@+id/textView107"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/pend_diag"
+            android:id="@+id/textView16"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="16dp"
+            android:layout_below="@+id/textView29"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ang_piantaA"
+            android:id="@+id/textView17"
+            android:textSize="16sp"
+            android:paddingTop="14dp"
+            android:layout_below="@+id/textView16"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="16dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ang_piantaB"
+            android:id="@+id/textView18"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_below="@+id/textView17"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView19"
+            android:width="60sp"
+            android:height="20sp"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="-null-"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:layout_below="@+id/textView107"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/textView15"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView20"
+            android:width="60sp"
+            android:height="20sp"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="-null-"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/textView29"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"
+            android:paddingBottom="4dp"
+            android:layout_above="@+id/textView3"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/smuss_b"
+            android:id="@+id/textView29"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:layout_below="@+id/textView15"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="16dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView30"
+            android:width="60sp"
+            android:height="20sp"
+            android:textAlignment="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="-null-"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:textColor="@color/black_87"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16sp"
+            android:layout_alignTop="@+id/til"
+            android:layout_alignLeft="@+id/button5"
+            android:layout_alignStart="@+id/button5">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/textDialog2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Angolo \u03B2:"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="4" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:layout_below="@+id/textView106"
+            android:layout_toStartOf="@+id/textView110"
+            android:paddingEnd="16sp"
+            android:layout_toLeftOf="@+id/textView110"
+            android:paddingBottom="4dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/textDialog"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Angolo \u03B1:"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:nextFocusDown="@id/textDialog2"
+                android:maxLength="4" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="DATI RICHIESTI:"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView106"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:layout_below="@+id/imageView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/editText4"
+            android:layout_alignEnd="@+id/editText4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="DATI OTTENUTI:"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView107"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:paddingLeft="8dp"
+            android:paddingTop="20dp"
+            android:layout_below="@+id/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="......."
+            android:id="@+id/textView108"
+            android:layout_toRightOf="@+id/textView16"
+            android:layout_toEndOf="@+id/textView16"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignTop="@+id/textView16"
+            android:textColor="@color/black_87"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="........................."
+            android:id="@+id/textView109"
+            android:layout_below="@+id/textView15"
+            android:layout_toRightOf="@+id/textView29"
+            android:layout_toEndOf="@+id/textView29"
+            android:textColor="@color/black_87"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="........................."
+            android:id="@+id/textView110"
+            android:layout_alignTop="@+id/textView15"
+            android:layout_toRightOf="@+id/textView29"
+            android:layout_toEndOf="@+id/textView29"
+            android:paddingTop="8dp"
+            android:textColor="@color/black_87"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="..........."
+            android:id="@+id/textView111"
+            android:layout_alignBottom="@+id/textView18"
+            android:layout_toRightOf="@+id/textView17"
+            android:layout_toEndOf="@+id/textView17"
+            android:layout_alignTop="@+id/textView18"
+            android:textColor="@color/black_87"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="..........."
+            android:id="@+id/textView112"
+            android:paddingTop="14dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/black_87"
+            android:textSize="16sp"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_toRightOf="@+id/textView17"
+            android:layout_toEndOf="@+id/textView17" />
+
+
+    </RelativeLayout>
+</ScrollView>

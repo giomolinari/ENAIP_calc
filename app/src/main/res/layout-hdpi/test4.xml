@@ -1,0 +1,294 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".Superficie_rettangolo">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@drawable/sup_rett"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="DATI RICHIESTI:"
+            android:id="@+id/textView118"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:textColor="@color/colorPrimary" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout"
+            android:layout_below="@+id/textView118"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16sp"
+                android:paddingBottom="4dp"
+                android:layout_below="@+id/til"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/til"
+                android:layout_alignStart="@+id/til">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/textDialog4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gronda:"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16sp"
+                android:paddingBottom="4dp"
+                android:layout_below="@+id/til2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/til2"
+                android:layout_alignEnd="@+id/til2">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/textDialog3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pendenza \u03B1:"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:nextFocusDown="@id/textDialog4"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="16sp"
+                android:layout_alignTop="@+id/til"
+                android:layout_alignLeft="@+id/button5"
+                android:layout_alignStart="@+id/button5"
+                android:layout_alignRight="@+id/button2"
+                android:layout_alignEnd="@+id/button2">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/textDialog2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Lato A:"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:nextFocusDown="@id/textDialog"
+                    android:maxLength="4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingTop="4dp"
+                android:layout_below="@+id/textView106"
+                android:paddingEnd="16sp"
+                android:layout_alignLeft="@+id/button3"
+                android:layout_alignStart="@+id/button3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/textDialog"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Lato B:"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:nextFocusDown="@id/textDialog3"
+                    android:maxLength="4" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="CALCOLA DATI"
+                android:id="@+id/button2"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:layout_below="@+id/textView125"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="RESETTA"
+                android:id="@+id/button3"
+                android:paddingBottom="8dp"
+                android:gravity="center"
+                android:layout_alignTop="@+id/button2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Superficie tavolato:"
+                android:id="@+id/textView69"
+                android:layout_below="@+id/textView119"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="8dp"
+                android:paddingStart="16dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/black_87"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Superficie isolante:"
+                android:id="@+id/textView70"
+                android:layout_below="@+id/textView69"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingStart="16dp"
+                android:textColor="@color/black_87"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="-null-"
+                android:id="@+id/textView71"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/textView69"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp"
+                android:paddingEnd="8dp"
+                android:textColor="@color/black_87"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="-null-"
+                android:id="@+id/textView72"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView71"
+                android:layout_alignRight="@+id/button3"
+                android:layout_alignEnd="@+id/button3"
+                android:paddingEnd="8dp"
+                android:textColor="@color/black_87"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="DATI OTTENUTI:"
+                android:id="@+id/textView119"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingLeft="8dp"
+                android:paddingTop="20dp"
+                android:layout_below="@+id/button2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=".................."
+                android:id="@+id/textView122"
+                android:paddingTop="8dp"
+                android:textColor="@color/black_87"
+                android:layout_alignTop="@+id/textView69"
+                android:layout_toRightOf="@+id/textView69"
+                android:layout_toEndOf="@+id/textView69"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="..................."
+                android:id="@+id/textView123"
+                android:textColor="@color/black_87"
+                android:layout_below="@+id/textView69"
+                android:layout_toRightOf="@+id/textView70"
+                android:layout_toEndOf="@+id/textView70"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/red"
+                android:visibility="invisible"
+                android:text="Inserisci i dati richiesti"
+                android:id="@+id/textView125"
+                android:textSize="10sp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2sp"
+                android:layout_below="@+id/til4"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

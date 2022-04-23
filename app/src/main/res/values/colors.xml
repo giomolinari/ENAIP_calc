@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#455A64</color>
+    <color name="colorPrimaryDark">#37474F</color>
+    <color name="colorAccent">#FF6D00</color>
+    <color name="grigio">#E0E0E0</color>
+    <color name="nero">#616161</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#616161</color>
+    <color name="gray_button">#BDBDBD</color>
+
+    <color name="black_87">#B3000000</color>
+    <color name="red">#D50000</color>
+
+    <color name="background_activity">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,135 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.cham.giovannimolinari.enaip_app.FragmentTre">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/contatta_enaip"
+            android:id="@+id/textView74"
+            android:layout_below="@+id/textView75"
+            android:layout_alignParentStart="true"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/black_87" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:id="@+id/button4"
+            android:layout_below="@+id/textView74"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Contatti"
+            android:id="@+id/textView75"
+            android:paddingLeft="8dp"
+            android:paddingTop="12dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView78"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView7"
+            android:src="@drawable/logo_enaip"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/chi_siamo"
+            android:id="@+id/textView78"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="2dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/black_87"
+            android:layout_below="@+id/textView32"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView41"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/imageView7"
+            android:layout_alignParentStart="true"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView38"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/textView41"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView42"
+            android:paddingBottom="0dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/textView38"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/scuola"
+            android:id="@+id/textView32"
+            android:paddingLeft="8dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/textView42"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

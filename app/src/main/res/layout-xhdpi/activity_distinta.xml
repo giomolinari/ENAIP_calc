@@ -1,0 +1,408 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.cham.giovannimolinari.enaip_app.Distinta"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:layout_below="@+id/til2"
+            android:layout_alignLeft="@+id/til2"
+            android:layout_alignStart="@+id/til2">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/textDialog4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Metri cubi:"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:editable="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:layout_below="@+id/til"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/til"
+            android:layout_alignEnd="@+id/til">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/textDialog3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lato C:"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:editable="true"
+                android:nextFocusDown="@id/textDialog4"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:layout_below="@+id/textView99"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView103"
+            android:layout_alignLeft="@+id/button5"
+            android:layout_alignStart="@+id/button5">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/textDialog2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lato B:"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:editable="true"
+                android:nextFocusDown="@id/textDialog3"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:layout_below="@+id/textView99"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:layout_alignRight="@+id/button6"
+            android:layout_alignEnd="@+id/button6">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/textDialog"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lato A:"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:editable="true"
+                android:nextFocusDown="@id/textDialog2"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView2"
+            android:width="60dp"
+            android:height="20dp"
+            android:textAlignment="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="-null-"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:layout_alignTop="@+id/textView101"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/textView101"
+            android:paddingBottom="4dp"
+            android:textColor="@color/black_87" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView3"
+            android:width="60dp"
+            android:height="20dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="-null-"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingEnd="8dp"
+            android:layout_alignTop="@+id/textView102"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="4dp"
+            android:layout_alignBottom="@+id/textView102"
+            android:textColor="@color/black_87"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="RESETTA"
+            android:id="@+id/button5"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:paddingEnd="24dp"
+            android:paddingStart="24dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_alignTop="@+id/button6"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/dist1"
+            android:id="@+id/textView7"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:layout_below="@+id/textView100"
+            android:textColor="@color/black_87" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/dist2"
+            android:id="@+id/textView8"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/textView3"
+            android:paddingStart="16dp"
+            android:paddingBottom="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/black_87"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="CALCOLA DATI"
+            android:id="@+id/button6"
+            android:textSize="14dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/til"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="59dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/dist3"
+            android:id="@+id/textView11"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="16dp"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView13"
+            android:width="60dp"
+            android:height="20dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="-null-"
+            android:textStyle="bold"
+            android:paddingEnd="8dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black_87"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:src="@drawable/dist"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="DATI RICHIESTI:"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView99"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:layout_below="@+id/RadioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="DATI OTTENUTI:"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView100"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingLeft="8dp"
+            android:paddingTop="20dp"
+            android:layout_below="@+id/button6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="..................."
+            android:id="@+id/textView101"
+            android:layout_alignTop="@+id/textView7"
+            android:paddingTop="8dp"
+            android:textColor="@color/black_87"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=".............................."
+            android:id="@+id/textView102"
+            android:layout_below="@+id/textView7"
+            android:layout_toRightOf="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="................"
+            android:id="@+id/textView103"
+            android:layout_alignTop="@+id/textView11"
+            android:layout_toRightOf="@+id/textView11"
+            android:layout_toEndOf="@+id/textView11"
+            android:textColor="@color/black_87"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="TIPOLOGIA LEGNAME:"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView124"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:layout_below="@+id/imageView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_below="@+id/textView124"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="8dp"
+            android:paddingStart="8dp"
+            android:layout_toStartOf="@+id/til2"
+            android:layout_toLeftOf="@+id/til2" />
+
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/spinner2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/spinner2"
+            android:layout_alignEnd="@+id/spinner2"
+            android:paddingTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="left">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verde"
+                android:id="@+id/radioButton"
+                android:layout_alignTop="@+id/spinner2"
+                android:layout_toRightOf="@+id/spinner2"
+                android:checked="false"
+                android:layout_alignRight="@+id/til2"
+                android:layout_alignEnd="@+id/til2"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Essiccato"
+                android:id="@+id/radioButton2"
+                android:checked="false"
+                android:layout_toRightOf="@+id/spinner2"
+                android:layout_alignRight="@+id/radioButton"
+                android:layout_alignEnd="@+id/radioButton"
+                android:layout_alignBottom="@+id/spinner2"
+                android:layout_below="@+id/radioButton"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.cham.giovannimolinari.enaip_app.Guida" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guida_calc_titolo"
+            android:id="@+id/textView128"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guida_calc"
+            android:id="@+id/textView129"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="2dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/black_87"
+            android:layout_below="@+id/textView128"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guida_incl_titolo"
+            android:id="@+id/textView126"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView129" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guida_incl"
+            android:id="@+id/textView125"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="2dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/black_87"
+            android:layout_below="@+id/textView126" />
+    </RelativeLayout>
+</ScrollView>
